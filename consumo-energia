@@ -1,0 +1,37 @@
+def calcular_consumo_inteligente():
+    print("="*40)
+    print("SISTEMA DE ANÁLISE DE EFICIÊNCIA ENERGÉTICA")
+    print("="*40)
+
+    # Entrada de Dados
+    nome = input("Nome do aparelho: ")
+    potencia = float(input(f"Potência de {nome} (em Watts): "))
+    horas_dia = float(input(f"Horas de uso diário de {nome}: "))
+
+    # Processamento: Cálculo Base
+    # Fórmula: (W * h * 30 dias) / 1000
+    consumo_mensal = (potencia * horas_dia * 30) / 1000
+    custo_estimado = consumo_mensal * 0.75
+
+    # Estrutura de Decisão (Raciocínio Lógico)
+    if consumo_mensal <= 10:
+        classificacao = "BAIXO CONSUMO (Econômico)"
+        dica = "Excelente! Este aparelho impacta pouco na conta."
+    elif consumo_mensal <= 30:
+        classificacao = "CONSUMO MODERADO"
+        dica = "Uso equilibrado. Monitore para evitar desperdícios."
+    else:
+        classificacao = "ALTO CONSUMO (Atenção!)"
+        dica = "Cuidado! Considere reduzir o tempo de uso ou trocar por um modelo Procel A."
+
+    # Saída de Dados Estruturada
+    print("\n" + "-"*40)
+    print(f"RELATÓRIO DO APARELHO: {nome.upper()}")
+    print(f"Consumo Mensal: {consumo_mensal:.2f} kWh")
+    print(f"Custo Estimado: R$ {custo_estimado:.2f}")
+    print(f"Classificação: {classificacao}")
+    print(f"Sugestão: {dica}")
+    print("-"*40)
+
+if __name__ == "__main__":
+    calcular_consumo_inteligente()
