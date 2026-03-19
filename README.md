@@ -21,7 +21,7 @@ $$consumoMensal = \frac{potencia \times horas \times 30}{1000}$$
 ## 🚀 Como Executar o Programa 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/MarinaTomazela/consumo-energia.git
+   git clone https://github.com/MarinaTomazela/projeto.git
 2. Acesse a pasta do projeto: cd consumo-energia
 
 3. Certifique-se de ter o **Python** instalado em sua máquina.
